@@ -1049,6 +1049,9 @@ video {
 .h-full {
   height: 100%;
 }
+.max-h-\[420px\] {
+  max-height: 420px;
+}
 .w-5 {
   width: 1.25rem;
 }
@@ -1343,10 +1346,6 @@ video {
 }
 @media (min-width: 640px) {
 
-  .sm\:aspect-square {
-    aspect-ratio: 1 / 1;
-  }
-
   .sm\:h-40 {
     height: 10rem;
   }
@@ -1373,6 +1372,10 @@ video {
 
   .md\:hidden {
     display: none;
+  }
+
+  .md\:max-h-\[480px\] {
+    max-height: 480px;
   }
 
   .md\:scroll-mt-24 {
