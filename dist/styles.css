@@ -1370,6 +1370,10 @@ video {
 }
 @media (min-width: 768px) {
 
+  .md\:ml-6 {
+    margin-left: 1.5rem;
+  }
+
   .md\:block {
     display: block;
   }
@@ -1392,6 +1396,10 @@ video {
 
   .md\:flex-row {
     flex-direction: row;
+  }
+
+  .md\:justify-self-end {
+    justify-self: end;
   }
 }
 @media (min-width: 1024px) {
