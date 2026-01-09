@@ -1,0 +1,9 @@
+{
+  "items": [
+    { "src": "assets/images/certificates/Date_Privacy_Awareness.png", "alt": "Data Privacy Awareness" },
+    { "src": "assets/images/certificates/Information_Security.png", "alt": "Information Security" },
+    { "src": "assets/images/certificates/Linux_Essentials.png", "alt": "Linux Essentials" },
+    { "src": "assets/images/certificates/Operating_System_Basics.png", "alt": "Operating System Basics" },
+    { "src": "assets/images/certificates/Protecting_Intellectual_Property_in_the_Digital_Age.png", "alt": "Protecting Intellectual Property in the Digital Age" }
+  ]
+}

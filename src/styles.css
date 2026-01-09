@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    text-size-adjust: 100%;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center rounded-md px-4 py-2 font-medium transition focus:outline-none focus:ring-2 focus:ring-offset-2 bg-brand text-white hover:bg-brand-dark focus:ring-brand dark:bg-brand dark:hover:bg-brand-dark;
+  }
+  .btn-outline {
+    @apply inline-flex items-center justify-center rounded-md px-4 py-2 font-medium transition focus:outline-none focus:ring-2 focus:ring-offset-2 border border-brand text-brand hover:bg-brand hover:text-white focus:ring-brand dark:border-brand dark:text-brand dark:hover:bg-brand dark:hover:text-white;
+  }
+  .btn-sm {
+    @apply px-3 py-1.5 text-sm;
+  }
+  .link {
+    @apply underline decoration-2 text-brand hover:text-brand-dark dark:text-brand dark:hover:text-brand-dark;
+  }
+  .nav-link {
+    @apply text-sm text-gray-700 dark:text-gray-300 px-2 py-1 rounded-md transition-colors hover:text-brand relative;
+  }
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    height: 2px;
+    width: 0%;
+    background-color: #2563eb;
+    transition: width 300ms ease;
+  }
+  .nav-link-active::after {
+    width: 100%;
+  }
+  .card {
+    @apply rounded-xl border border-gray-200 bg-white shadow-sm dark:border-gray-700 dark:bg-gray-800;
+  }
+  .chip {
+    @apply inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white px-3 py-1 text-sm text-gray-700 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-300;
+  }
+  .cert-thumb {
+    @apply relative aspect-video overflow-hidden rounded-lg ring-1 ring-gray-200 bg-white shadow-sm dark:ring-gray-700 dark:bg-gray-800;
+  }
+  .cert-overlay {
+    @apply absolute inset-0 flex items-center justify-center bg-black/40 backdrop-blur-sm opacity-0 transition-opacity;
+  }
+  .overlay-text {
+    @apply text-white font-medium;
+  }
+  .btn-view {
+    @apply inline-flex items-center gap-2 rounded-md px-3 py-1.5 text-sm font-medium transition border border-brand text-brand hover:bg-brand hover:text-white focus:outline-none focus:ring-2 focus:ring-brand focus:ring-offset-2 dark:border-brand dark:text-brand dark:hover:bg-brand dark:hover:text-white;
+  }
+  .section {
+    @apply py-16 md:py-24;
+  }
+  .modal {
+    @apply fixed inset-0 z-50;
+  }
+  .modal-backdrop {
+    @apply absolute inset-0 bg-black/60 backdrop-blur-sm;
+  }
+  .modal-container {
+    @apply relative h-full flex items-center justify-center p-4;
+  }
+  .modal-panel {
+    @apply w-full max-w-3xl rounded-xl border border-gray-200 bg-white shadow-lg overflow-hidden dark:border-gray-700 dark:bg-gray-800;
+  }
+  .modal-header {
+    @apply flex items-center justify-between px-4 py-3 border-b border-gray-200 dark:border-gray-700;
+  }
+  .modal-title {
+    @apply text-lg font-semibold;
+  }
+  .modal-body {
+    @apply p-4;
+  }
+  .modal-image {
+    @apply w-full h-auto object-contain;
+  }
+  .social-card {
+    @apply card p-4 flex items-center justify-between transition hover:shadow-md hover:border-brand;
+  }
+  .social-left {
+    @apply flex items-center gap-3;
+  }
+  .social-icon {
+    @apply inline-flex h-10 w-10 items-center justify-center rounded-full text-white shadow-sm;
+  }
+  .social-title {
+    @apply font-medium;
+  }
+  .social-arrow {
+    @apply text-lg text-gray-400 transition;
+  }
+  .icon-facebook {
+    background-color: #1877F2;
+  }
+  .icon-instagram {
+    background-image: linear-gradient(135deg, #F58529, #DD2A7B, #8134AF, #515BD4);
+  }
+  .icon-linkedin {
+    background-color: #0A66C2;
+  }
+  .icon-email {
+    background-color: #2563eb;
+  }
+  .reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    will-change: opacity, transform;
+    transition:
+      transform 600ms cubic-bezier(0.22, 1, 0.36, 1) var(--reveal-delay, 0ms),
+      opacity 600ms ease var(--reveal-delay, 0ms);
+  }
+  .reveal-show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

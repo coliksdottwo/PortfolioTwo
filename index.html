@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Portfolio</title>
+    <meta name="description" content="Portfolio showcasing projects, skills, and contact information.">
+    <meta property="og:title" content="Portfolio">
+    <meta property="og:description" content="Portfolio showcasing projects, skills, and contact information.">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/bold/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="./dist/styles.css">
+  </head>
+  <body class="bg-white text-gray-900 antialiased dark:bg-gray-900 dark:text-gray-100 font-sans">
+    <header class="sticky top-0 z-40 border-b border-gray-200 bg-white/80 backdrop-blur dark:border-gray-800 dark:bg-gray-900/80">
+      <div class="container mx-auto max-w-7xl px-4">
+        <div class="grid h-16 grid-cols-3 items-center">
+          <div class="flex items-center">
+            <a href="#home" class="text-2xl font-semibold tracking-tight">Ferdinand</a>
+          </div>
+          <nav class="hidden md:block justify-self-center" aria-label="Primary">
+            <ul class="flex items-center justify-center gap-6">
+              <li><a href="#home" class="nav-link">Home</a></li>
+              <li><a href="#about" class="nav-link">About</a></li>
+              <li><a href="#projects" class="nav-link">Projects</a></li>
+              <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="flex items-center justify-end gap-3">
+            <button data-theme-toggle aria-pressed="false" class="group inline-flex items-center justify-center rounded-full border border-gray-200 bg-gray-50 px-3 py-2 text-gray-700 shadow-sm transition hover:bg-gray-100 hover:shadow-md dark:border-gray-700 dark:bg-gray-800 dark:text-gray-200 dark:hover:bg-gray-700" aria-label="Toggle theme">
+              <i class="ph-bold ph-sun text-xl dark:hidden"></i>
+              <i class="ph-bold ph-moon-stars text-xl hidden dark:inline"></i>
+            </button>
+            <button data-nav-toggle aria-expanded="false" class="md:hidden inline-flex h-9 w-9 items-center justify-center rounded-md border border-gray-200 bg-gray-50 text-gray-700 hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-200 dark:hover:bg-gray-700">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M4 6h16v2H4zM4 11h16v2H4zM4 16h16v2H4z"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <nav data-nav-menu class="md:hidden hidden border-t border-gray-200 dark:border-gray-800">
+        <div class="container mx-auto max-w-7xl px-4">
+          <ul class="flex flex-col gap-2 py-3">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="section scroll-mt-16 md:scroll-mt-24">
+        <div class="container mx-auto max-w-7xl px-4">
+          <div class="grid items-center gap-10 md:grid-cols-2">
+            <div class="space-y-6">
+              <h1 class="text-4xl font-bold tracking-tight sm:text-5xl">Hello, I am a Web Developer</h1>
+              <p class="text-base sm:text-lg text-gray-700 dark:text-gray-300">I build modern, performant websites and applications. Explore selected work and get in touch.</p>
+              <div class="flex flex-wrap gap-3">
+                <a href="assets/files/CV.pdf" download class="btn"><i class="ph-bold ph-download-simple mr-2 text-lg" aria-hidden="true"></i>Download CV</a>
+                <a href="#projects" class="btn-outline"><i class="ph-bold ph-squares-four mr-2 text-lg" aria-hidden="true"></i>View Projects</a>
+              </div>
+            </div>
+          </div>
+            <div class="relative aspect-video sm:aspect-square">
+              <img src="assets/images/image.jpg" alt="Hero image" loading="eager" class="h-full w-full object-cover rounded-2xl shadow-sm">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section scroll-mt-16 md:scroll-mt-24 border-t border-gray-200 dark:border-gray-800">
+        <div class="container mx-auto max-w-7xl px-4">
+          <div class="flex items-end justify-between">
+            <h2 class="text-3xl font-semibold tracking-tight">About</h2>
+          </div>
+          <div class="mt-6 grid gap-6 md:grid-cols-2">
+            <div class="card p-6 space-y-4">
+              <h3 class="text-xl font-semibold flex items-center gap-2"><i class="ph-bold ph-user"></i> About Me</h3>
+              <p class="text-base sm:text-lg text-gray-700 dark:text-gray-300">Hi! I’m Ferdinand Colico  passionate and aspiring developer with a strong interest in building practical and user-friendly web and mobile applications. I enjoy working with technologies like Flask, Flutter, MySQL, and modern CSS frameworks to create clean, functional, and responsive digital solutions.</p>
+              <p class="text-base sm:text-lg text-gray-700 dark:text-gray-300">I’m constantly learning and improving my skills, especially in backend development, API integration, and UI/UX design. I believe in writing code that is not only efficient but also easy to maintain and scale. Whether it’s developing a website, connecting a mobile app to a backend, or experimenting with new tools, I enjoy turning ideas into working projects.</p>
+              <p class="text-base sm:text-lg text-gray-700 dark:text-gray-300">Beyond coding, I value teamwork, problem-solving, and continuous growth. I’m always open to new challenges and opportunities that allow me to learn, collaborate, and make an impact through technology.</p>
+              <ul class="grid gap-2">
+                <li class="flex items-center gap-2 text-gray-700 dark:text-gray-300"><i class="ph-bold ph-lightning"></i> Performance-minded and detail-oriented</li>
+                <li class="flex items-center gap-2 text-gray-700 dark:text-gray-300"><i class="ph-bold ph-device-mobile"></i> Mobile-first, responsive design</li>
+                <li class="flex items-center gap-2 text-gray-700 dark:text-gray-300"><i class="ph-bold ph-shield-check"></i> Accessibility and semantics</li>
+              </ul>
+            </div>
+            <div class="grid gap-6">
+              <div class="card p-6">
+                <h3 class="text-xl font-semibold flex items-center gap-2"><i class="ph-bold ph-wrench"></i> Skills</h3>
+                <div class="mt-4 space-y-4">
+                  <div>
+                    <h4 class="text-sm font-medium text-gray-600 dark:text-gray-400">Technical Skills</h4>
+                    <div class="mt-2 flex flex-wrap gap-2">
+                      <span class="chip">HTML</span>
+                      <span class="chip">JavaScript</span>
+                      <span class="chip">CSS</span>
+                      <span class="chip">Python</span>
+                      <span class="chip">C#</span>
+                      <span class="chip">PHP</span>
+                      <span class="chip">MySQL</span>
+                      <span class="chip">Flask</span>
+                      <span class="chip">Dart</span>
+                    </div>
+                  </div>
+                  <div>
+                    <h4 class="text-sm font-medium text-gray-600 dark:text-gray-400">Soft Skills</h4>
+                    <div class="mt-2 flex flex-wrap gap-2">
+                      <span class="chip">Communication</span>
+                      <span class="chip">Teamwork</span>
+                      <span class="chip">Problem Solving</span>
+                      <span class="chip">Adaptability</span>
+                      <span class="chip">Time Management</span>
+                      <span class="chip">Attention to Detail</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card p-6">
+                <h3 class="text-xl font-semibold flex items-center gap-2"><i class="ph-bold ph-toolbox"></i> Tools I Use</h3>
+                <div class="mt-4 flex flex-wrap gap-2">
+                  <span class="chip">VS Code</span>
+                  <span class="chip">Visual Studio</span>
+                  <span class="chip">Photoshop</span>
+                  <span class="chip">Git</span>
+                  <span class="chip">Canva</span>
+                </div>
+              </div>
+              <div class="card p-6">
+                <h3 class="text-xl font-semibold flex items-center gap-2"><i class="ph-bold ph-certificate"></i> Certificates</h3>
+                <div class="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                  <div class="cert-thumb group">
+                    <img src="assets/images/certificates/Date_Privacy_Awareness.png" alt="Data Privacy Awareness" loading="lazy" class="h-full w-full object-cover">
+                    <a href="assets/images/certificates/Date_Privacy_Awareness.png" target="_blank" rel="noopener" class="cert-overlay group-hover:opacity-100">
+                      <span class="overlay-text">View</span>
+                    </a>
+                  </div>
+                  <div class="cert-thumb group">
+                    <img src="assets/images/certificates/Information_Security.png" alt="Information Security" loading="lazy" class="h-full w-full object-cover">
+                    <a href="assets/images/certificates/Information_Security.png" target="_blank" rel="noopener" class="cert-overlay group-hover:opacity-100">
+                      <span class="overlay-text">View</span>
+                    </a>
+                  </div>
+                  <div class="cert-thumb group">
+                    <img src="assets/images/certificates/Linux_Essentials.png" alt="Linux Essentials" loading="lazy" class="h-full w-full object-cover">
+                    <a href="assets/images/certificates/Linux_Essentials.png" target="_blank" rel="noopener" class="cert-overlay group-hover:opacity-100">
+                      <span class="overlay-text">View</span>
+                    </a>
+                  </div>
+                  <div class="cert-thumb group">
+                    <img src="assets/images/certificates/Operating_System_Basics.png" alt="Operating System Basics" loading="lazy" class="h-full w-full object-cover">
+                    <a href="assets/images/certificates/Operating_System_Basics.png" target="_blank" rel="noopener" class="cert-overlay group-hover:opacity-100">
+                      <span class="overlay-text">View</span>
+                    </a>
+                  </div>
+                  <div class="cert-thumb group">
+                    <img src="assets/images/certificates/Protecting_Intellectual_Property_in_the_Digital_Age.png" alt="Protecting Intellectual Property in the Digital Age" loading="lazy" class="h-full w-full object-cover">
+                    <a href="assets/images/certificates/Protecting_Intellectual_Property_in_the_Digital_Age.png" target="_blank" rel="noopener" class="cert-overlay group-hover:opacity-100">
+                      <span class="overlay-text">View</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section scroll-mt-16 md:scroll-mt-24 border-t border-gray-200 dark:border-gray-800">
+        <div class="container mx-auto max-w-7xl px-4">
+          <div class="flex items-end justify-between">
+            <h2 class="text-3xl font-semibold tracking-tight">Projects</h2>
+            <a href="#contact" class="btn"><i class="ph-bold ph-phone mr-2 text-lg" aria-hidden="true"></i>Work with me</a>
+          </div>
+          <div class="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <article class="card overflow-hidden">
+              <img src="assets/images/thumbnails/image223.jpg" alt="Laundry Services Login UI" loading="lazy" class="h-36 sm:h-40 w-full object-cover">
+              <div class="p-6 space-y-2">
+                <h3 class="text-xl font-semibold">Laundry Point of Sale System</h3>
+                <p class="text-gray-700 dark:text-gray-300">Clean login screen concept designed in Figma.</p>
+                <a href="https://www.figma.com/design/rxSk67zXQtUyffTOlzZBDq/Untitled?node-id=0-1&p=f&t=a6pj14tTkjuiAhrX-0" target="_blank" rel="noopener" class="btn-outline btn-sm"><i class="ph-bold ph-eye mr-2 text-base" aria-hidden="true"></i>View</a>
+              </div>
+            </article>
+            <article class="card overflow-hidden">
+              <img src="assets/images/thumbnails/image.png" alt="ShoeKicks UI thumbnail" loading="lazy" class="h-36 sm:h-40 w-full object-cover">
+              <div class="p-6 space-y-2">
+                <h3 class="text-xl font-semibold">ShoeKicks Shop UI</h3>
+                <p class="text-gray-700 dark:text-gray-300">E‑commerce shop page prototype designed in Figma.</p>
+                <a href="https://www.figma.com/design/QyWDbUZ5WJ9GkcJrsJwE8x/ShoeKicks?node-id=0-1&p=f&t=20duXZWEIrKsXoCD-0" target="_blank" rel="noopener" class="btn-outline btn-sm"><i class="ph-bold ph-eye mr-2 text-base" aria-hidden="true"></i>View</a>
+              </div>
+             </article>
+            <article class="card overflow-hidden">
+              <img src="assets/images/thumbnails/thumb3.png" alt="Fire Safety Certificate Monitoring System thumbnail" loading="lazy" class="h-36 sm:h-40 w-full object-cover">
+              <div class="p-6 space-y-2">
+                <h3 class="text-xl font-semibold">Fire Safety Certificate Monitoring System</h3>
+                <p class="text-gray-700 dark:text-gray-300">Monitor FSIC/FSEC statuses and reminders in one place.</p>
+                <a href="#" data-offline-view class="btn-outline btn-sm"><i class="ph-bold ph-eye mr-2 text-base" aria-hidden="true"></i>View</a>
+              </div>
+            </article>
+          </div>
+          <div class="card p-6 mt-6">
+            <p class="text-gray-700 dark:text-gray-300">Other projects are soon to be uploaded.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section scroll-mt-16 md:scroll-mt-24 border-t border-gray-200 dark:border-gray-800">
+        <div class="container mx-auto max-w-7xl px-4">
+          <h2 class="text-3xl font-semibold tracking-tight">Contact</h2>
+          <div class="mt-6 grid gap-4 sm:grid-cols-2">
+            <a href="mailto:colicoferdinandj@gmail.com" class="social-card group" aria-label="Email">
+              <div class="social-left">
+                <span class="social-icon icon-email ring-0 group-hover:ring-2 group-hover:ring-brand group-hover:ring-offset-2">
+                  <i class="ph-bold ph-envelope text-xl" aria-hidden="true"></i>
+                </span>
+                <div>
+                  <div class="social-title">Email</div>
+                  <div class="text-sm text-gray-600 dark:text-gray-400">colicoferdinandj@gmail.com</div>
+                </div>
+              </div>
+              <i class="ph-bold ph-arrow-up-right social-arrow group-hover:text-brand" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.facebook.com/colikss/" target="_blank" rel="noopener" class="social-card group" aria-label="Facebook">
+              <div class="social-left">
+                <span class="social-icon icon-facebook ring-0 group-hover:ring-2 group-hover:ring-brand group-hover:ring-offset-2">
+                  <i class="ph-bold ph-facebook-logo text-xl" aria-hidden="true"></i>
+                </span>
+                <div>
+                  <div class="social-title">Facebook</div>
+                  <div class="text-sm text-gray-600 dark:text-gray-400">@colikss</div>
+                </div>
+              </div>
+              <i class="ph-bold ph-arrow-up-right social-arrow group-hover:text-brand" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.instagram.com/colikshh/" target="_blank" rel="noopener" class="social-card group" aria-label="Instagram">
+              <div class="social-left">
+                <span class="social-icon icon-instagram ring-0 group-hover:ring-2 group-hover:ring-brand group-hover:ring-offset-2">
+                  <i class="ph-bold ph-instagram-logo text-xl" aria-hidden="true"></i>
+                </span>
+                <div>
+                  <div class="social-title">Instagram</div>
+                  <div class="text-sm text-gray-600 dark:text-gray-400">@colikshh</div>
+                </div>
+              </div>
+              <i class="ph-bold ph-arrow-up-right social-arrow group-hover:text-brand" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/ferdinand-colico-795b1a381/" target="_blank" rel="noopener" class="social-card group" aria-label="LinkedIn">
+              <div class="social-left">
+                <span class="social-icon icon-linkedin ring-0 group-hover:ring-2 group-hover:ring-brand group-hover:ring-offset-2">
+                  <i class="ph-bold ph-linkedin-logo text-xl" aria-hidden="true"></i>
+                </span>
+                <div>
+                  <div class="social-title">LinkedIn</div>
+                  <div class="text-sm text-gray-600 dark:text-gray-400">Ferdinand Colico</div>
+                </div>
+              </div>
+              <i class="ph-bold ph-arrow-up-right social-arrow group-hover:text-brand" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-gray-200 py-10 text-sm text-gray-600 dark:border-gray-800 dark:text-gray-400">
+      <div class="container mx-auto max-w-7xl px-4">
+        <div class="flex flex-col items-center justify-between gap-3 md:flex-row">
+          <p>© <span id="year"></span> Portfolio</p>
+          <div class="flex items-center gap-4">
+            <a href="#about" class="hover:underline">About</a>
+            <a href="#projects" class="hover:underline">Projects</a>
+            <a href="#contact" class="hover:underline">Contact</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div id="cert-modal" data-cert-modal class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="cert-modal-title">
+      <div data-cert-modal-backdrop class="modal-backdrop"></div>
+      <div class="modal-container">
+        <div class="modal-panel">
+          <div class="modal-header">
+            <h3 id="cert-modal-title" class="modal-title"></h3>
+            <button type="button" data-cert-modal-close class="btn-view">Close</button>
+          </div>
+          <div class="modal-body">
+            <img id="cert-modal-image" class="modal-image" src="" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="offline-modal" data-offline-modal class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="offline-modal-title">
+      <div data-offline-modal-backdrop class="modal-backdrop"></div>
+      <div class="modal-container">
+        <div class="modal-panel">
+          <div class="modal-header">
+            <h3 id="offline-modal-title" class="modal-title">Project Unavailable</h3>
+            <button type="button" data-offline-modal-close class="btn-view">Close</button>
+          </div>
+          <div class="modal-body">
+            <p class="text-gray-700 dark:text-gray-300">This project is not online yet.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="./src/js/main.js"></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
